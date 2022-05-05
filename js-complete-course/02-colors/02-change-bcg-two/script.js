@@ -9,8 +9,9 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+let runButton = document.getElementById("run")
 
-    // your code here
-
-})();
+runButton.addEventListener("click", function (){
+    let colorInput = document.getElementById("color")
+    document.body.style.backgroundColor = colorInput.value
+})
