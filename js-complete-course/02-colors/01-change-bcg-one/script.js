@@ -9,8 +9,21 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-const btn = document.getElementById('red')
+let btnRed = document.getElementById('red')
+let btnYellow = document.getElementById('yellow')
+let btnGreen = document.getElementById('green')
+let btnBlue = document.getElementById('blue')
 
-btn.addEventListener('click', function onClick(event     ) {
+btnRed.addEventListener('click', function onClick(event ) {
     document.body.style.backgroundColor = 'red'
-});
+})
+btnYellow.addEventListener('click', function onClick(event) {
+    document.body.style.backgroundColor = 'yellow'
+})
+btnGreen.addEventListener('click', function onClick(event) {
+    document.body.style.backgroundColor = 'green'
+})
+btnBlue.addEventListener('click', function onClick(event) {
+    document.body.style.backgroundColor = 'blue'
+})
+
