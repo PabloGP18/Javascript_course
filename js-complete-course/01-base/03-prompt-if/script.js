@@ -9,8 +9,15 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function getValue() {
 
-  // your code here
+    let awnser = prompt ("Do you want more cake? " , "your awnser here")
+
+    if (awnser.toLowerCase() == "yes"){
+        alert("Congrats");
+    }else{
+        alert("More cake for me then :p");
+    }
+
 
 })();

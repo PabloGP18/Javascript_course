@@ -9,8 +9,18 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function getValue() {
 
-    // your code here
+    let age = prompt("Enter your age here: ","Your age here");
+    let gender = prompt("Enter your gender here: ","Your gender here");
+    let town = prompt("Enter your town here: ","Your town here");
+
+    let anwsers = confirm(`Your age is ${age}, your gender is ${gender} and you live in ${town}`);
+
+    if (anwsers == true){
+        alert("Bye bye")
+    }else{
+        getValue();
+    }
 
 })();
