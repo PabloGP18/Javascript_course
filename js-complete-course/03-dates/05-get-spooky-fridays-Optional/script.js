@@ -9,8 +9,23 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
 
-    // your code here
+const button = document.getElementById('run');
 
-})();
+button.addEventListener('click', function calcSpecificDay(){
+
+    let year = document.getElementById('year').value;
+
+    let counter = 0;
+
+    for (i = 1; i <= 12; i++) {
+
+        let dateSpecific = new Date(i + "/13/" + year);
+
+        if (dateSpecific.getDay() == 5) {
+            counter++;
+        }
+    }
+    document.getElementById("target").innerHTML = counter;
+
+});

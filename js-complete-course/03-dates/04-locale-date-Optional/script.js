@@ -28,7 +28,6 @@
 
     const dateWithSlashes = [monthsWritten[date.getMonth()], month + 1, dayWritten [date.getDay() - 1] ,year , time].join(' ');
     */
-
     document.getElementById("target").innerHTML = date;
 
 })();
