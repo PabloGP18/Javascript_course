@@ -25,7 +25,7 @@
 
             case 'addition':
                 document.getElementById("target").innerHTML = opOne + opTwo
-                //target.innerHTML... other way to write the case addition
+                //target.innerHTM = opOne + opTwoL... other way to write the case addition
                 break;
 
             case 'subtraction':
