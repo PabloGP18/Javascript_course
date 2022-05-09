@@ -11,11 +11,11 @@
 
 (function() {
 
-    var fruits = [
+    const fruits = [
         "apple",
         "pear",
         "raspberry",
-        "tomatos",
+        "tomatoes",
         "kiwi",
         "banana",
         "orange",
