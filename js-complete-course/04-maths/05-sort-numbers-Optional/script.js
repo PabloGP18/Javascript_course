@@ -9,14 +9,19 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
 
-    // to get the value of an input: document.getElementById("element-id").value
 
-    document.getElementById("run").addEventListener("click", function() {
+(function sortArray() {
 
-        // your code here
+    document.getElementById("run").addEventListener("click", function () {
+        let inputNum = document.getElementById("numbers").value;
 
+        let arrNum = inputNum.split(",").map((str) => {
+            return Number(str);
+        });
+
+        let resultArr = arrNum.sort((a, b) => a - b);
+        console.log(resultArr)
+        alert(resultArr);
     });
-
 })();
