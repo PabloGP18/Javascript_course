@@ -26,6 +26,13 @@
         "cerise",
     ];
 
-    // your code here
+    document.getElementById('run').addEventListener('click', function (){
+        fruits.forEach(function (fruits){
+            console.log(fruits);
+        });
+        // 2 ways to write a loop with  foreach
+        fruits.forEach(fruits => console.log(fruits));
+
+    });
 
 })();
