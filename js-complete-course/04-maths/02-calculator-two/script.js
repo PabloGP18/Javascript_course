@@ -9,11 +9,38 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
-    // to get the value of an input: document.getElementById("element-id").value
+(function Calculator() {
 
-    var performOperation = function(operation) {
-        // perform the operation
+
+
+    let performOperation = function(operation) {
+
+        const opOne = parseInt(document.getElementById("op-one").value);
+        const opTwo = parseInt(document.getElementById("op-two").value);
+        //you can do parseInt here @variables or @ the operation ex: parseInt(opOne)
+
+        console.log(operation)
+
+        switch (operation) {
+
+            case 'addition':
+                document.getElementById("target").innerHTML = opOne + opTwo
+                //target.innerHTML... other way to write the case addition
+                break;
+
+            case 'subtraction':
+                document.getElementById("target").innerHTML = opOne - opTwo;
+                break;
+
+            case 'multiplication':
+                document.getElementById("target").innerHTML = opOne * opTwo;
+                break;
+
+            case 'division':
+                document.getElementById("target").innerHTML = opOne / opTwo;
+                break;
+
+        }
     };
 
     Array.from(document.querySelectorAll("button.operator")).forEach(function($btn) {
