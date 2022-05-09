@@ -8,14 +8,24 @@
 
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
+(function factorial () {
 
-(function() {
-    
-    // to get the value of an input: document.getElementById("element-id").value
+    document.getElementById("run").addEventListener("click", function () {
 
-    document.getElementById("run").addEventListener("click", function() {
+        const input = document.getElementById('number').value;
+        // Or  if (number == 0 || number == 1)
+        if (isNaN(input)) {
+            console.log('Please provide a number!')
+        } else {
+            console.log(input + ' Is a number')
 
-        // your code here
+            let fact = 1;
+            for (i = 1; i <= input; i++) {
+                fact = fact * i;
+                console.log(fact * i)
+            }
+            console.log(`The factorial for: ${input} is: ${fact}`)
+        }
 
     });
 
