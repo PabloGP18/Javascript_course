@@ -11,7 +11,7 @@
 
 (function() {
 
-    var people = [
+    const people = [
         {
             firstname: "Garald",
             lastname: "Freschi",
@@ -39,6 +39,7 @@
         },
     ];
 
-    // your code here
-
+    document.getElementById('run').addEventListener('click',function (){
+        people.forEach(names => console.log(`${names.firstname} ${names.lastname}`));
+    });
 })();
