@@ -11,6 +11,10 @@
 
 (function() {
 
-    // your code here
+    // all 3 way work for selecting element without getElementById
+
+    document.querySelector("#target").innerHTML = "owned";
+    document.querySelector("#target").textContent = "owned";
+    document.querySelector("#target").innerText = "owned";
 
 })();
