@@ -9,8 +9,18 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
-    // your code here
+    const hoverOn = document.getElementById("image").getAttribute("data-hover");
+    const hoverOff = document.getElementById("image").src;
 
+    const image = document.getElementById("image");
+
+    image.addEventListener("mouseover", () => {
+        image.src = hoverOn;
+    });
+
+    image.addEventListener("mouseout", () => {
+        image.src = hoverOff;
+    });
 })();
