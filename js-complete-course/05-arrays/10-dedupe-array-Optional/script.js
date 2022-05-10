@@ -28,5 +28,16 @@
         "cerise",
     ];
 
-    // your code here
+    document.getElementById('run').addEventListener('click', function (){
+
+        // With filter method
+        let uniqueChars = fruits.filter((element, index) => {
+            return fruits.indexOf(element) === index;
+        });
+        console.log(uniqueChars);
+
+        //Other way to return array without duplicates with set method
+        let uniqueChars2 = [...new Set(fruits)]
+        console.log(uniqueChars2)
+    });
 })();

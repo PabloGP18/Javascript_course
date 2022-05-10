@@ -89,6 +89,12 @@
         },
     ];
 
-    // your code here
+    document.getElementById('run').addEventListener('click', function (){
+
+        let sumAge = people.reduce((acc, peo) => {
+            return acc + peo.age}, 0); // This means that last argument is a number
+        console.log("Sum age is:", sumAge);
+
+    });
 
 })();
