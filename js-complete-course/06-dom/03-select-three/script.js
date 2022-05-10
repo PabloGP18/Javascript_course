@@ -11,6 +11,10 @@
 
 (function() {
 
-    // your code here
+    // select all the same class names with queryselectorall => .target
+    const change = document.querySelectorAll(".target");
+
+    // a foreach to change them all by owned
+    change.forEach((change) => (change.textContent = "Owned"));
 
 })();
