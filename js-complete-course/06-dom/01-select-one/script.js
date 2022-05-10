@@ -11,6 +11,10 @@
 
 (function() {
 
-    // your code here
+    // does the same in writing it 3 different way
+
+    target.textContent = "owned";
+    target.innerHTML = "owned";
+    document.getElementById('target').innerHTML = "owned";
 
 })();
