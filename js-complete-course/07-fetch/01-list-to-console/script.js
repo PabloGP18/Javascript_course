@@ -11,4 +11,22 @@
 
 (() => {
     // your code here
+
+    const api_url = "http://localhost:3000/heroes";
+
+
+    /*(async ()=>{
+        let data = await getData(url));
+        console.log(data)
+    })();*/
+
+    document.getElementById("run").addEventListener('click',getHeroesData)
+
+    async function getHeroesData () {
+
+        let data =  await fetch(api_url)
+        let main =   await data.json()
+        console.log(main)
+    }
+
 })();
