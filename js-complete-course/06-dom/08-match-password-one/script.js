@@ -22,12 +22,12 @@
             pass1.style.border = '1px solid red';
             pass2.style.border = '1px solid red';
         }else{
-            target.innerHTML = 'Passwords are  the same';
+            target.innerHTML = 'Passwords are the same';
             pass1.style.border = '1px solid black';
             pass2.style.border = '1px solid black';
         }
 
-       /* the first way i solved the code (longer way)
+       /* the first way I solved the code (longer way)
         let inputOne = pass1.value;
         let inputTwo = pass2.value;
 
