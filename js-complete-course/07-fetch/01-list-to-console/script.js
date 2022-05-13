@@ -28,5 +28,4 @@
         let main =   await data.json()
         console.log(main)
     }
-
 })();
